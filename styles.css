@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 1rem;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    grid-template-rows: 200px;
+    grid-auto-rows: 200px;
+    background-color: rgb(109, 10, 239);
+    padding: 2rem;
+    border-radius: 2rem;
+    
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.container .box {
+    background-color: rgb(237, 6, 6);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .box p {
+    color: #fff;
+    font-size: 4rem;
+}
+
+.container .box:nth-child(1) {
+    grid-column: 3 / -2;
+    grid-row: 1 / 2;
+}
+.container .box:nth-child(2) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+.container .box:nth-child(3) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+.container .box:nth-child(4) {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+.container .box:nth-child(5) {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+.container .box:nth-child(6) {
+    grid-column: 3 / -2;
+    grid-row: 3 / 4;
+}
+.container .box:nth-child(7) {
+    grid-column: 3 / -2;
+    grid-row: 2 / 3;
+}
+.container .box:nth-child(8) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+.container .box:nth-child(9) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px;
+        grid-auto-rows: 200px;        
+              
+    }
+
+    .container .box:nth-child(1) {
+    grid-column: 1 / -2;
+    grid-row: 3 / 4;
+}
+.container .box:nth-child(2) {
+    grid-column: 1 / -2;
+    grid-row: 1 / 2;
+}
+.container .box:nth-child(3) {
+    grid-column: 1 / -2;
+    grid-row: 5 / 6;
+}
+.container .box:nth-child(4) {
+    grid-column: 1 / -2;
+    grid-row: 8 / 9;
+}
+.container .box:nth-child(5) {
+    grid-column: 1 / -2;
+    grid-row: 7 / 8;
+}
+.container .box:nth-child(6) {
+    grid-column: 1 / -2;
+    grid-row: 9 / 10;
+}
+.container .box:nth-child(7) {
+    grid-column: 1 / -2;
+    grid-row: 6 / 7;
+}
+.container .box:nth-child(8) {
+    grid-column: 1 / -2;
+    grid-row: 4 / 5;
+}
+.container .box:nth-child(9) {
+    grid-column: 1 / -2;
+    grid-row: 2 / 3;
+}
+
+   
+       
+
+    
+    
+}
